@@ -82,7 +82,7 @@ function setting() {
 #macro show_debug_logs						false
 #macro max_players							8
 #macro airdodge_type						AIRDODGE_TYPE.rivals
-#macro shield_type							SHIELD_TYPE.melee
+#macro shield_type							SHIELD_TYPE.rivals
 #macro wall_jump_type						WALL_JUMP_TYPE.rivals
 //Visibility								
 //Screen									

@@ -48,3 +48,6 @@ switch(setting().match_stage)
 		array_push(textures_needed, "texture_peak");
 		break;
 	}
+	
+//Stop sounds
+audio_stop_all();

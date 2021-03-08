@@ -19,7 +19,7 @@ function attack_start() {
 			return;
 			}
 	
-		//Attack phase 
+		//Attack phase
 		attack_phase = 0;
 		attack_frame = 0;
 

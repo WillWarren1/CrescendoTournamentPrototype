@@ -19,7 +19,7 @@ function hitbox_create_melee() {
 		{
 		image_xscale = argument[2];
 		image_yscale = argument[3];
-		damage =  argument[4];
+		damage = argument[4];
 		base_knockback = argument[5];
 		knockback_scaling = argument[6];
 		base_hitlag = argument[7];

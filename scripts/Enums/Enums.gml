@@ -94,7 +94,6 @@ enum CC_INPUT_CONTROLLER
 	grab,
 	smash,
 	taunt,
-	beat_boost,
 	pause,
 	
 	short_hop,
@@ -110,7 +109,6 @@ enum CC_INPUT_KEYBOARD
 	grab,
 	smash,
 	taunt,
-	beat_boost,
 	pause,
 	
 	short_hop,

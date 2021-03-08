@@ -60,13 +60,6 @@ function pummel0() {
 				{
 				anim_frame = 4;
 			
-				//Grab is released even during pummels
-				if (state_frame == 0)
-					{
-					grab_release();
-					break;
-					}
-			
 				if (attack_frame == 0)
 					{
 					var _grab_time = state_frame;

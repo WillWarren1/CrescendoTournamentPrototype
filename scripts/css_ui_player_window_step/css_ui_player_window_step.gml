@@ -175,15 +175,18 @@ function css_ui_player_window_step() {
 				//Creating the new profile
 				if (_option)
 					{
-					var _profile = Profile_Create(profile_new_name, 0, 0, custom_controls_create(), [], 0, false);
-					css_player_set(index, CSS_PLAYER.profile, _profile);
-					state = CSS_PLAYER_WINDOW_STATE.select_character;
-					//Re activate cursor
-					css_ui_cursor_set_active(index, true);
-					profile_new_letter = 0;
-					profile_new_name = "";
-					//Save profiles
-					Profile_Save_All();
+					if (profile_new_name != "")
+						{
+						var _profile = Profile_Create(profile_new_name, 0, 0, custom_controls_create(), [], 0, false);
+						css_player_set(index, CSS_PLAYER.profile, _profile);
+						state = CSS_PLAYER_WINDOW_STATE.select_character;
+						//Re activate cursor
+						css_ui_cursor_set_active(index, true);
+						profile_new_letter = 0;
+						profile_new_name = "";
+						//Save profiles
+						Profile_Save_All();
+						}
 					break;
 					}
 				break;

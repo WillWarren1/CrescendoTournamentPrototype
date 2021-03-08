@@ -21,25 +21,29 @@ function attack_stop() {
 
 	//Parry Stun
 	if run && check_parried() run = false;
+	
+	//Reset the parry stun time
 	parry_stun_time = parry_default_stun_time;
 
 	//Set state (optional argument)
-	if (run && argument_count > 0)
+	if (run)
 		{
-		state_set(argument[0]);
-		run = false;
-		}
-	else
-		{
-		if (on_ground())
+		if (argument_count > 0)
 			{
-			state_set(PLAYER_STATE.idle);
+			state_set(argument[0]);
+			run = false;
 			}
 		else
 			{
-			state_set(PLAYER_STATE.aerial);
+			if (on_ground())
+				{
+				state_set(PLAYER_STATE.idle);
+				}
+			else
+				{
+				state_set(PLAYER_STATE.aerial);
+				}
+			run = false;
 			}
 		}
-
-
 }

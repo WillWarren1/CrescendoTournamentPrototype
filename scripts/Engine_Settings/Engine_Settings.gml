@@ -6,7 +6,7 @@
 - Cannot be changed during gameplay
 */
 //Version Number
-#macro version							"Beta 0.7.0"
+#macro version							"Beta 0.7.1"
 
 //Savefiles
 #macro profiles_save					"profiles.sav"

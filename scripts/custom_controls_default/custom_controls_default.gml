@@ -17,13 +17,11 @@ function custom_controls_default(argument0) {
 	_list = _inputs[| CC_INPUT_CONTROLLER.jump];
 	ds_list_recreate(_list, [CONTROLLER.X, CONTROLLER.Y]);
 	_list = _inputs[| CC_INPUT_CONTROLLER.grab];
-	ds_list_recreate(_list, [CONTROLLER.RB]);
+	ds_list_recreate(_list, [CONTROLLER.LB, CONTROLLER.LT]);
 	_list = _inputs[| CC_INPUT_CONTROLLER.shield];
-	ds_list_recreate(_list, [CONTROLLER.LT, CONTROLLER.RT]);
-	_list = _inputs[| CC_INPUT_CONTROLLER.beat_boost];
-	ds_list_recreate(_list, [CONTROLLER.START]);
+	ds_list_recreate(_list, [CONTROLLER.RB, CONTROLLER.RT]);
 	_list = _inputs[| CC_INPUT_CONTROLLER.pause];
-	ds_list_recreate(_list, [CONTROLLER.LB]);
+	ds_list_recreate(_list, [CONTROLLER.START]);
 	_list = _inputs[| CC_INPUT_CONTROLLER.smash];
 	ds_list_clear(_list);
 	_list = _inputs[| CC_INPUT_CONTROLLER.taunt];
@@ -46,8 +44,6 @@ function custom_controls_default(argument0) {
 	ds_list_recreate(_list, [ord("U")]);
 	_list = _inputs[| CC_INPUT_KEYBOARD.shield];
 	ds_list_recreate(_list, [ord("I")]);
-	_list = _inputs[| CC_INPUT_CONTROLLER.beat_boost];
-	ds_list_recreate(_list, [ord(vk_shift)]);
 	_list = _inputs[| CC_INPUT_KEYBOARD.pause];
 	ds_list_recreate(_list, [vk_backspace]);
 	_list = _inputs[| CC_INPUT_KEYBOARD.smash];

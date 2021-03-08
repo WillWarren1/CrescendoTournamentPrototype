@@ -38,6 +38,7 @@ function jab_chrom() {
 					_hitbox.di_angle = 7;
 					_hitbox.techable = true;
 					_hitbox.hitstun_scaling = 4;
+					_hitbox.can_be_parried = false;
 					}
 				break;
 				}
@@ -53,6 +54,7 @@ function jab_chrom() {
 					_hitbox.di_angle = 7;
 					_hitbox.techable = true;
 					_hitbox.hitstun_scaling = 4;
+					_hitbox.can_be_parried = false;
 					}
 				
 				if (attack_frame == 3)

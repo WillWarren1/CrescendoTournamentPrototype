@@ -15,10 +15,6 @@ function hitbox_register_hit() {
 		_hitbox.owner.any_hitbox_has_hit = true;
 		//The hit will count toward a KO in a timed match
 		ko_property = _hitbox.owner;
-		if (obj_beat_tracker.giveBeatBonus && _hitbox.owner.player_rhythm_meter != 10)
-		{
-			_hitbox.owner.player_rhythm_meter += 1
-		}
 		}
 	else
 		{

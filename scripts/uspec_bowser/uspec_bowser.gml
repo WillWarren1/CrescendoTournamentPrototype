@@ -160,6 +160,7 @@ function uspec_bowser() {
 					}
 				else
 					{
+					if (check_ledge_grab()) return;
 					friction_gravity(air_friction, grav, max_fall_speed);
 					}
 				

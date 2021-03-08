@@ -4,7 +4,6 @@ if (only_one()) then exit;
 #region Initialize variables
 background = [back_clear];
 stage_script = -1;
-BPM = -1;
 music = -1;
 music_intro_pos = 0;
 music_loop_pos = 0;
@@ -75,8 +74,6 @@ switch(room)
 			back_clear,
 			];
 		stage_script = -1;
-		BPM = 180
-		//instance_create_layer()
 		stage_set_music(song_battlefield, 56.0, 120.0);
 		break;
 		

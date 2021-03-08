@@ -33,7 +33,7 @@ function Standard_Grabbing() {
 			}
 		#endregion
 		#region Pummel
-		if (run)
+		if (run && state_frame > 0)
 			{
 			var _grab_frame = state_frame;
 			if (check_pummel())
@@ -47,9 +47,9 @@ function Standard_Grabbing() {
 	#endregion
 	#region Grab Interrupt
 	//If the grabbed player is no longer being grabbed, the grab releases
-	if ((grabbed_id.state != PLAYER_STATE.is_grabbed && 
+	if (run && ((grabbed_id.state != PLAYER_STATE.is_grabbed && 
 		grabbed_id.state != PLAYER_STATE.in_hitlag) ||
-		grabbed_id.grab_hold_id != id)
+		grabbed_id.grab_hold_id != id))
 		{
 		grab_release();
 		run = false;

@@ -1,4 +1,4 @@
-///@func attack_stop([state],[reset_hitboxes],[parry_stun])
+///@func attack_stop_ext([state],[reset_hitboxes],[parry_stun])
 ///@param [state]
 ///@param [reset_hitboxes]
 ///@param [parry_stun]
@@ -34,22 +34,24 @@ function attack_stop_ext() {
 		}
 
 	//Set state (optional argument)
-	if (run && argument_count > 0)
+	if (run)
 		{
-		state_set(argument[0]);
-		run = false;
-		}
-	else
-		{
-		if (on_ground())
+		if (argument_count > 0)
 			{
-			state_set(PLAYER_STATE.idle);
+			state_set(argument[0]);
+			run = false;
 			}
 		else
 			{
-			state_set(PLAYER_STATE.aerial);
+			if (on_ground())
+				{
+				state_set(PLAYER_STATE.idle);
+				}
+			else
+				{
+				state_set(PLAYER_STATE.aerial);
+				}
+			run = false;
 			}
 		}
-
-
 }

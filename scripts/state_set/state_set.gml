@@ -295,14 +295,7 @@ function state_set() {
 			break;
 		case PLAYER_STATE.parry_stun:
 			//Animation
-			if (on_ground())
-				{
-				anim_set(my_sprites[? "ParryS"]);
-				}
-			else
-				{
-				anim_set(my_sprites[? "Tumble"]);
-				}
+			anim_set(my_sprites[? "ParryS"]);
 			break;
 		case PLAYER_STATE.parrying:
 			//Run the start phase of the parry script, which handles animation

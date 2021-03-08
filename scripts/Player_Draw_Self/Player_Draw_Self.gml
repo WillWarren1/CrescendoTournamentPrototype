@@ -24,7 +24,6 @@ function Player_Draw_Self() {
 				anim_color,
 				anim_alpha,
 				);
-				draw_text(_x, _y - 40, player_rhythm_meter);
 			}
 		else
 			{

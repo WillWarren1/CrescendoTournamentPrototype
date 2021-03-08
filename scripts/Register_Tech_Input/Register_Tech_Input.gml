@@ -9,7 +9,7 @@ function Register_Tech_Input() {
 			state == PLAYER_STATE.in_balloon || 
 			state == PLAYER_STATE.in_tumble)
 			{
-			if (button(INPUT.shield, buff))
+			if (button(INPUT.shield, buff, false))
 				{
 				tech_buffer = 0;
 				}
@@ -19,6 +19,4 @@ function Register_Tech_Input() {
 		{
 		tech_buffer++;
 		}
-
-
 }

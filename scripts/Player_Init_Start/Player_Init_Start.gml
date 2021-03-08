@@ -17,8 +17,6 @@ function Player_Init_Start() {
 	player_color = 0;
 	player_outline_color = c_black;
 	player_profile = 0;
-	player_rhythm_meter = 0;
-	beat_modifier= 1;
 
 	//Other state variables
 	jump_is_shorthop = false;
@@ -96,7 +94,7 @@ function Player_Init_Start() {
 	scs_smash_stick = false;
 	scs_switch_sticks = false;
 	scs_auto_walk = false;
-	scs_right_stick_input = INPUT.attack;
+	scs_right_stick_input = INPUT.smash;
 
 	//Make a ds_list to store the last few frames of input (input buffer)
 	input_buffer = ds_list_create();
