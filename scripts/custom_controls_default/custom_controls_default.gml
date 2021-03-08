@@ -17,13 +17,13 @@ function custom_controls_default(argument0) {
 	_list = _inputs[| CC_INPUT_CONTROLLER.jump];
 	ds_list_recreate(_list, [CONTROLLER.X, CONTROLLER.Y]);
 	_list = _inputs[| CC_INPUT_CONTROLLER.grab];
-	ds_list_recreate(_list, [CONTROLLER.RB, CONTROLLER.LT]);
+	ds_list_recreate(_list, [CONTROLLER.RB]);
 	_list = _inputs[| CC_INPUT_CONTROLLER.shield];
-	ds_list_recreate(_list, [CONTROLLER.LB, CONTROLLER.RT]);
+	ds_list_recreate(_list, [CONTROLLER.LT, CONTROLLER.RT]);
 	_list = _inputs[| CC_INPUT_CONTROLLER.beat_boost];
-	ds_list_recreate(_list, [CONTROLLER.LB]);
-	_list = _inputs[| CC_INPUT_CONTROLLER.pause];
 	ds_list_recreate(_list, [CONTROLLER.START]);
+	_list = _inputs[| CC_INPUT_CONTROLLER.pause];
+	ds_list_recreate(_list, [CONTROLLER.LB]);
 	_list = _inputs[| CC_INPUT_CONTROLLER.smash];
 	ds_list_clear(_list);
 	_list = _inputs[| CC_INPUT_CONTROLLER.taunt];

@@ -18,7 +18,7 @@ function Player_Init_Start() {
 	player_outline_color = c_black;
 	player_profile = 0;
 	player_rhythm_meter = 0;
-	  = 1;
+	beat_modifier= 1;
 
 	//Other state variables
 	jump_is_shorthop = false;
