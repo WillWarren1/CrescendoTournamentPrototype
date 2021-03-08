@@ -22,7 +22,7 @@ function attack_stop() {
 	//Parry Stun
 	if run && check_parried() run = false;
 	parry_stun_time = parry_default_stun_time;
-
+	usingBeatBonus = false;
 	//Set state (optional argument)
 	if (run && argument_count > 0)
 		{

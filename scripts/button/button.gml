@@ -7,7 +7,7 @@ function button() {
 	var _ar, _in, _bu, _de;
 	_ar = input_buffer;
 	_in = argument[0];
-	_bu = argument_count > 1 ? argument[1] : buff;
+	_bu = argument_count > 1 ? argument[1] : buff; 
 	_de = argument_count > 2 ? argument[2] : true;
 
 	//Checks if the input has been pressed within the time

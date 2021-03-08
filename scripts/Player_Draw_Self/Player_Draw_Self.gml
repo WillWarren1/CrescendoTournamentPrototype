@@ -25,6 +25,7 @@ function Player_Draw_Self() {
 				anim_alpha,
 				);
 				draw_text(_x, _y - 40, player_rhythm_meter);
+				draw_text(_x, _y - 60, usingBeatBonus);
 			}
 		else
 			{

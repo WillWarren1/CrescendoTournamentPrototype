@@ -81,6 +81,7 @@ enum INPUT
 	smash,
 	taunt,
 	pause,
+	beat_boost,
 	
 	length,
 	}

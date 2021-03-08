@@ -88,3 +88,13 @@ if (!background_is_cleared())
 	{
 	fade_value = min(fade_value + 0.1, 1);
 	}
+
+//Beat Bonus Handler
+	//Check beat boost
+var _boost_button = button(INPUT.beat_boost, buff)
+if (_boost_button) then  usingBeatBonus = true;
+if (usingBeatBonus) {
+	beat_modifier = 1.5;
+} else {
+	beat_modifier = 1;
+}

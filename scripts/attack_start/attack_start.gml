@@ -36,7 +36,7 @@ function attack_start() {
 		hitbox_group_reset_all();
 		any_hitbox_has_hit = false;
 		any_hitbox_has_been_blocked = false;
-
+		usingBeatBonus = false;
 		//Execute the first frame (the special start phase)
 		script_execute(attack_script, PHASE.start);
 		}
