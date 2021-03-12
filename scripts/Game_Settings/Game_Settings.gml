@@ -82,7 +82,7 @@ function setting() {
 #macro show_debug_logs						false
 #macro max_players							8
 #macro airdodge_type						AIRDODGE_TYPE.rivals
-#macro shield_type							SHIELD_TYPE.melee
+#macro shield_type							SHIELD_TYPE.rivals
 #macro wall_jump_type						WALL_JUMP_TYPE.rivals
 //Visibility								
 //Screen									
@@ -199,7 +199,7 @@ function setting() {
 #macro landing_buffer_jumpsquat				true //Whether players start jumpsquat before landing lag finishes
 //Smash Attacks								
 #macro smash_attack_max_charge				100
-#macro smash_attack_multiplier				0.65
+#macro smash_attack_multiplier				0.65 * (beat_modifier > 1 ? beat_modifier -.25 : 1)
 //Grabs
 #macro base_grab_time						30
 #macro grab_time_multiplier					0.5

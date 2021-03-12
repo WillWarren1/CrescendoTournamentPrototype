@@ -21,7 +21,7 @@ function character_init2() {
 
 	//Jumping
 	jumpsquat_time = 3;
-	jump_speed = 13.5;
+	jump_speed = 12;
 	jump_horizontal_accel = 10;
 	shorthop_speed = 8.5;
 	double_jump_speed = 11.5;

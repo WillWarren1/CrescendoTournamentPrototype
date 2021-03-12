@@ -91,8 +91,8 @@ if (!background_is_cleared())
 
 //Beat Bonus Handler
 	//Check beat boost
-var _boost_button = button(INPUT.beat_boost, buff)
-if (_boost_button) then  usingBeatBonus = true;
+var _boost_button = button_hold(INPUT.beat_boost, buff)
+if (_boost_button && player_rhythm_meter > 3) then  usingBeatBonus = true else usingBeatBonus = false;
 if (usingBeatBonus) {
 	beat_modifier = 1.5;
 } else {

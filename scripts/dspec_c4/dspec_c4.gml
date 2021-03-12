@@ -37,6 +37,8 @@ function dspec_c4() {
 					{
 					if (owner == other.id)
 						{
+						beat_modifier = owner.beat_modifier;
+						player_rhythm_meter = owner.player_rhythm_meter
 						_exists = true;
 						break;
 						}

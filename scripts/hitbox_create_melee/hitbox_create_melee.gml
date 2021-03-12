@@ -17,17 +17,20 @@ function hitbox_create_melee() {
 	var _newhitbox = instance_create_layer(x + argument[0] * facing, y + argument[1], layer, obj_hitbox_melee);
 	with(_newhitbox)
 		{
+		owner = other.id;
 		image_xscale = argument[2];
 		image_yscale = argument[3];
-		damage =  argument[4];
-		base_knockback = argument[5];
+		 
+		if (owner.beat_modifier > 1) {
+			owner.player_rhythm_meter -= 3
+		}
+		base_knockback = owner.beat_modifier > 1 ? argument[5] * 1.2 : argument[5];
 		knockback_scaling = argument[6];
 		base_hitlag = argument[7];
 		angle = argument[8];
 		grounded_angle = angle;
 		lifetime = argument[9];
 		hitbox_set_shape(_newhitbox, argument[10]);
-		owner = other.id;
 		owner_xstart = other.x;
 		owner_ystart = other.y;
 		hitbox_group = argument[11];

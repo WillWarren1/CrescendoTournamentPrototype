@@ -17,16 +17,19 @@ function hitbox_create_projectile() {
 	var _newhitbox = instance_create_layer(x + argument[0] * facing, y + argument[1], layer, obj_hitbox_projectile);
 	with(_newhitbox)
 		{
+		owner = other.id;
 		image_xscale = argument[2];
 		image_yscale = argument[3];
-		damage = argument[4];
+		damage = argument[4] > 1 ? argument[4] * (owner.beat_modifier > 1 ? owner.beat_modifier - .25 : 1) : 1;
+		if (owner.player_rhythm_meter > 3) {
+			owner.player_rhythm_meter -= 3;
+		}
 		base_knockback = argument[5];
 		knockback_scaling = argument[6];
 		angle = argument[7];
 		grounded_angle = angle;
 		lifetime = argument[8];
 		hitbox_set_shape(id, argument[9]);
-		owner = other.id;
 		facing = other.facing;
 		hsp = argument[10] * other.facing;
 		vsp = argument[11];

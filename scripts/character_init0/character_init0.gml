@@ -21,7 +21,7 @@ function character_init0() {
 
 	//Jumping
 	jumpsquat_time = 3;
-	jump_speed = 11.5;
+	jump_speed = 9.5;
 	jump_horizontal_accel = 3;
 	shorthop_speed = 6.5;
 	double_jump_speed = 10.5;
@@ -36,7 +36,7 @@ function character_init0() {
 	air_friction = 0.04;
 
 	//Ground Movement
-	ground_friction = 0.75;
+	ground_friction = 0.7;
 	crouch_friction = 1;
 	slide_friction = 0.35;
 	hard_landing_friction = 0.6;

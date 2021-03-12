@@ -39,7 +39,7 @@ function uair_cloud() {
 					attack_phase++;
 					attack_frame = 19;
 					//Initial hit
-					var _hitbox = hitbox_create_melee(36, -28, 1, 0.9, 10*beat_modifier, 7, 0.9, 10, 82, 3, HITBOX_SHAPE.square, 0);
+					var _hitbox = hitbox_create_melee(36, -28, 1, 0.9, 10, 7, 0.9, 10, 82, 3, HITBOX_SHAPE.square, 0);
 					_hitbox.hit_fx_style = HIT_FX.slash_medium;
 					_hitbox.hit_sfx = snd_hit_weak2;
 					_hitbox.hitstun_scaling = 1.5;

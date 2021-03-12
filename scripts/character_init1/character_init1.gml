@@ -36,7 +36,7 @@ function character_init1() {
 	air_friction = 0.04;
 
 	//Ground Movement
-	ground_friction = 0.5;
+	ground_friction = 0.7;
 	crouch_friction = 1;
 	slide_friction = 0.35;
 	hard_landing_friction = 0.6;
